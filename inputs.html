@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs - HTML </title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- inputs  -->
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" required id="nome" name="nome_completo" value="Emerson" />
+
+        <label for="idade">Idade</label>
+        <input type="number" id="idade" name="idade" placeholder="Idade" step="5" min="0" max="120"/>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="E-Mail" required/>
+
+        <!-- Radio - buttom -->
+
+        <p style="margin-bottom: 0;">Sexo</p>
+
+        <div>
+            <input type="radio" id="sexoF" value="F" name="sexo"> 
+            <label for="sexoF">Feminino</label>
+        </div>
+
+        <div>
+            <input type="radio" id="sexoM" value="M" name="sexo"> 
+            <label for="sexoM">Masculino</label>
+        </div>
+
+        <div>
+            <input type="radio" id="sexoO" value="O" name="sexo"> 
+            <label for="sexoO">Outros</label>
+        </div>
+
+        <!-- checkBox -->
+
+        <p style="margin-bottom: 0;">Hobbys</p>
+
+        <div>
+            <input type="checkbox" value="sim" id="cantar" name="cantar" />
+            <label for="cantar">Cantar</label>
+        </div>
+
+        <div>
+            <input type="checkbox" value="sim" id="dancar" name="dancar" />
+            <label for="dancar">Dançar</label>
+        </div>
+
+        <div>
+            <input type="checkbox" value="sim" id="programar" name="programar" />
+            <label for="programar">Programar</label>
+        </div>
+
+
+        <button type="menu">Enviar</button>
+       
+    </form>
+</body>
+</html>
